@@ -1,0 +1,151 @@
+.container {
+    margin: 0 5% 0 5%;
+}
+body {
+    font-family: "Poppins", sans-serif;
+
+    .background {
+        background-color: hsl(0, 100%, 74%);
+        background-image: url("../images/bg-intro-desktop.png");
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        .grid {
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 4em;
+            min-height: 100vh;
+            .description {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                color: hsl(300, 100, 99);
+                h1 {
+                    padding-bottom: 1em;
+                }
+                p {
+                    line-height: 1.5;
+                }
+            }
+
+            .sign-up-form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding-bottom: 1em;
+                padding-top: 1em;
+
+                .try-free-button {
+                    background-color: rgb(93, 84, 163);
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    width: 100%;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin-bottom: 2em;
+                    box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+                    font-weight: 400;
+                    strong {
+                        font-weight: 700;
+                    }
+                }
+                .form-background {
+                    width: 100%;
+                    border-radius: 5px;
+                    background-color: white;
+                    padding-bottom: 1em;
+                    border: none;
+                    display: inline-block;
+
+                    form {
+                        margin: 1em;
+                        .input {
+                            position: relative;
+                            input {
+                                width: 100%;
+                                padding: 12px 20px;
+                                margin: 8px 0;
+                                display: inline-block;
+                                border: 1px solid #ccc;
+                                border-radius: 4px;
+                                box-sizing: border-box;
+                            }
+                            .error-border {
+                                border: 1px solid hsl(358, 74, 80);
+                            }
+                            img {
+                                display: none;
+                                position: absolute;
+                                top: 30%;
+                                right: 0.5em;
+                            }
+                        }
+                        .error-message {
+                            display: none;
+                            text-align: right;
+                            color: hsl(358, 74, 80);
+                            font-weight: 500;
+                            text-align: right;
+                            font-style: italic;
+                            font-size: 0.8em;
+                            margin-top: 0.1em;
+                            margin-bottom: 0.1em;
+                        }
+                        button {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            font-weight: 500;
+                            display: inline-block;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                            letter-spacing: 1px;
+                            background-color: hsl(153, 59, 50);
+                            color: white;
+                            box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+                        }
+                    }
+                    .terms-services {
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+
+                        p {
+                            font-size: 0.75em;
+                            color: #b9b6d3;
+                            .red-text {
+                                font-weight: 600;
+                                color: hsl(358, 74, 80);
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        .background {
+            .grid {
+                grid-template-columns: 1fr;
+                .description {
+                    padding-bottom: 1em;
+                    padding-top: 3em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

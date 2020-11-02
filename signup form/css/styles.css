@@ -1,0 +1,143 @@
+.container {
+  margin: 0 5% 0 5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+body .background {
+  background-color: #ff7a7a;
+  background-image: url("../images/bg-intro-desktop.png");
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+body .background .grid {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4em;
+  min-height: 100vh;
+}
+body .background .grid .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fffaff;
+}
+body .background .grid .description h1 {
+  padding-bottom: 1em;
+}
+body .background .grid .description p {
+  line-height: 1.5;
+}
+body .background .grid .sign-up-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+body .background .grid .sign-up-form .try-free-button {
+  background-color: #5d54a3;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2em;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+}
+body .background .grid .sign-up-form .try-free-button strong {
+  font-weight: 700;
+}
+body .background .grid .sign-up-form .form-background {
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  padding-bottom: 1em;
+  border: none;
+  display: inline-block;
+}
+body .background .grid .sign-up-form .form-background form {
+  margin: 1em;
+}
+body .background .grid .sign-up-form .form-background form .input {
+  position: relative;
+}
+body .background .grid .sign-up-form .form-background form .input input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+body .background .grid .sign-up-form .form-background form .input .error-border {
+  border: 1px solid #f2a6a9;
+}
+body .background .grid .sign-up-form .form-background form .input img {
+  display: none;
+  position: absolute;
+  top: 30%;
+  right: 0.5em;
+}
+body .background .grid .sign-up-form .form-background form .error-message {
+  display: none;
+  text-align: right;
+  color: #f2a6a9;
+  font-weight: 500;
+  text-align: right;
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+body .background .grid .sign-up-form .form-background form button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-weight: 500;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  background-color: #34cb87;
+  color: white;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+}
+body .background .grid .sign-up-form .form-background .terms-services {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+body .background .grid .sign-up-form .form-background .terms-services p {
+  font-size: 0.75em;
+  color: #b9b6d3;
+}
+body .background .grid .sign-up-form .form-background .terms-services p .red-text {
+  font-weight: 600;
+  color: #f2a6a9;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  body .background .grid {
+    grid-template-columns: 1fr;
+  }
+  body .background .grid .description {
+    padding-bottom: 1em;
+    padding-top: 3em;
+    text-align: center;
+  }
+}
